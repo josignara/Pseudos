@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Psudoclases y pseudoelementos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pseudo-clases</h1>
+    </header>
+    <main>
+        <hr>
+        <article>
+            <section class="fc">
+                <p>Esto es un parrafo para probar :first-child.</p>
+                <p>Esto es otro parrafo</p>
+                <p>Otro parrafo</p>
+                <p>Y otro parrafo</p>
+            </section>    
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p>Estos párrafos son para link y visited</p>
+                <p>Primero el vinculo <a href="https://www.google.com">Búsqueda</a> en rojo</p>
+                <p>Y el visited también se verá rojo <a href="https://www.google.com">Clic</a></p>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p>Estos párrafos son para :hover</p>
+                <p>Primero el vinculo <a class="h" href="https://www.google.com">Búsqueda</a> con remarcado en rojo</p>
+                <p class="h">Y esto es un parrafo para ponerlo en rojo también cuando se posiciona el ratón encima</p>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p>Estos párrafos son para :active</p>
+                <p>Primero el vinculo <a class="a" href="https://www.google.com">Búsqueda</a> con active en rojo</p>
+                <p class="a">Y esto es un parrafo para ponerlo en rojo también cuando se clica encima y se mantiene la pulsación</p>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p>Estos párrafos son para :lang</p>
+                <p>Ambrose Bierce dijo (más o menos) que <q lang="es">una cita es una manera de repetir erróneamente las palabras de otros</q>.</p>
+                <p>Ambrose Bierce dijo (más o menos) que <q lang="en">a quotation is the act of repeating erroneously the words of another</q>.</p>
+            </section>
+        </article>
+        <hr>
+        <h2>Pseudo-elementos</h2>
+        <hr>
+        <article>
+            <section>
+                <p class="fl">Estos párrafos son para ::first-line así que ésta línea se verá verde y en mayúsculas</p>
+                <p>Esto es otro párrafo.</p>
+                <p>Este párrafo no hace falta</q>.</p>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p class="flt">Estos párrafos son para ::first-letter</p>
+                <p class="flt">Así completo párrafos</p>
+                <p class="flt">Siguiente párrafo</p>
+                <p class="flt">Ya no hay más párrafos que empiecen por letra</p>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p class="bf">Esto es un párrafo que contiene el Pseudo-elemento ::before</p>
+                <p class="afi">Este es otro párrafo cuyo content es una url a una imagen y tiene un after con la misma imagen</p>
+                <p>Y este otro que no va a clase porque no puede pero tiene párrafo</p>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <p class="af">Esto es un párrafo que contiene el Pseudo-elemento ::after</p>
+                <p>Este es otro párrafo sin clase</p>
+                <p>Y este otro que tampoco va a clase porque no puede pero tiene párrafo</p>
+            <br>
+                <pre>Contadores</pre>
+            <br>
+                <p class="counter">-Aquí vendrán una serie de párrafos donde se explicará counter, counter-increment y counter-reset</p>
+                <p class="counter">-Se pueden utilizar contadores con ::before y ::after</p>
+                <p class="counter">-Se utilizan los elementos mencionados</p>
+                <p class="counter">-Antes de nada se resetea la cuent con counter-rest</p>
+                <p class="counter">-Luego se añade el counter</p>
+                <p class="counter">-Luego se especifíca el increment</p>
+            <br>  
+                <pre>P A U S A, esto es un pre que se emplea para establecer el reseteo, podría emplearse otra etiqueta pero le toca al pre</pre>
+            <br>
+                <p class="counter">-Y aquí debe aparecer un uno</p>
+                <p class="counter">-Aquí un dos</p>
+                <p class="counter">-Y si este es tres todo bien</p>
+            <br>
+                <pre>P A U S A * Puede establecerse números enteros para la cuenta</pre>
+            <br>
+                <p class="counter2">-Y aquí debe aparecer un diez</p>
+                <p class="counter2">-Aquí un veinte</p>
+                <p class="counter2">-Y si este es tres todo treinta todo bien</p>
+            <br>
+                <pre>P A U S A * Puede generarse texto</pre>
+            <br>
+                <p class="counter3">-Aquí debe aparecer un uno antes de tres puntos</p>
+                <p class="counter3">-Aquí un dos antes de tres puntos</p>
+                <p class="counter3">-Y si este es tres antes de tres puntos sigue todo bien</p>
+            <br>
+                <pre>P A U S A * Puede generarse utilizando estilos de lista</pre>
+                <p class="counter4">-Aquí debe aparecer un uno romano</p>
+                <p class="counter4">-Aquí un dos romano</p>
+                <p class="counter4">-Y si este es tres romano estamos que nos salimos</p>
+            </section>
+        </article>
+       
+    </main>
+</body>
+</html>

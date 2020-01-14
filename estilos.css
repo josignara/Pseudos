@@ -1,0 +1,122 @@
+
+body
+{
+    text-align: center;
+}
+
+
+article.fc p:first-child {
+  color: red;
+}
+
+a:link, a:visited {
+    color:red;
+  }
+
+  a.h:hover {
+    color: black;
+    background-color:red;
+  }
+
+  p.h:hover {
+    color: black;
+    background-color:red;
+    margin-left: 180px;
+    margin-right: 180px;  
+  }
+
+  a.a:active {
+    color: white;
+    background-color:red;
+  }
+
+  p.a:active {
+    color: white;
+    background-color:red;
+    margin-left: 120px;
+    margin-right: 120px;  
+  }
+
+  q:lang(es) {
+    quotes: "<<" ">>";
+  }
+
+  q:lang(en) {
+    quotes: '¡' '!';
+  }
+
+  p.fl::first-line
+
+  {
+      text-transform: uppercase;
+      color: green;
+  }
+
+  p.flt::first-letter
+  {
+      color: red;
+  }
+
+  p.bf::before
+
+  {
+      content: "importante! ";
+      text-transform: uppercase;
+      color: red;
+      font-weight: bold;
+  }
+
+  p.af::after
+
+  {
+      content: " (Finiquitao)";
+      text-transform: lowercase;
+      color:blueviolet;
+      font-weight: initial;
+  }
+
+  p.afi::before, p.afi::after
+
+  {
+      content: url("img/bfi.jfif")
+
+  }
+
+  pre
+
+  {
+      text-transform: uppercase;
+      counter-reset: contador;
+      counter-reset: contador2;
+      font-weight: bolder;
+  }
+  
+  p.counter::before
+
+  {
+      content: counter(contador);
+      counter-increment: contador;
+  }
+
+  p.counter2::before
+
+  {
+      content: counter(contador);
+      counter-increment: contador 10;
+  }
+
+  p.counter3::before
+
+  {
+      content: counter(contador)"...";
+      counter-increment: contador;
+  }
+
+  p.counter4::before
+
+  {
+      content: counter(contador, upper-roman)".";
+      counter-increment: contador;
+  }
+;
+}
