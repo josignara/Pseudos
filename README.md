@@ -1,1 +1,1 @@
-# Psudos
+# Pseudos
