@@ -118,5 +118,3 @@ a:link, a:visited {
       content: counter(contador, upper-roman)".";
       counter-increment: contador;
   }
-;
-}
